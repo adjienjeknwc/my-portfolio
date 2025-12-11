@@ -15,18 +15,17 @@ export const projects = [
       // This color code shows design system thinking
       color: "bg-blue-50" 
     },
-    {
-      id: 2,
-      title: "E-Commerce Dashboard",
-      tagline: "Visualizing Data for Decision Makers",
-      role: "Technical Analyst",
-      businessProblem: "Store owners couldn't see daily profit margins without exporting 3 different Excel sheets.",
-      solution: "Created a centralized dashboard with consolidated KPIs, reducing reporting time by 90%.",
-      techStack: ["Next.js", "Chart.js", "Mock Data Architecture"],
-      liveLink: "#",
-      githubLink: "#",
-      color: "bg-purple-50"
-    },
+    
+      {
+        id: "retail-pulse",
+        title: "RetailPulse Dashboard",
+        category: "Full Stack Development",
+        description: "A real-time business analytics platform that visualizes sales data and tracks inventory levels. Features a split-cloud architecture (Render + Vercel) and live database connection.",
+        techStack: ["MERN Stack", "Tailwind CSS", "Recharts", "MongoDB Atlas"],
+        liveLink: "https://retail-pulse-eta.vercel.app",
+        repoLink: "https://github.com/adjienjeknwc/retail-pulse",
+        image: "/Users/aditi/my-portfolio/public/retail ss.png" // You need to add a screenshot to your assets folder!
+      }
     {
       id: 3,
       title: "Cooking Guide app",
