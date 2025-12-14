@@ -1,55 +1,54 @@
 export const projects = [
   {
     id: 1,
-    title: "FOODILY - Online food ordering website",
+    title: "Grid lock-EV charging solution",
     tagline:
-      "Analyzed customer pain points, designed intuitive ordering journeys, and developed a responsive food-ordering interface end-to-end.",
-    role: "UX Researcher & Frontend Dev",
+      "Dont over if i run out of battery now,find a nearby host and pay for the service .",
+    role: "ux researcher,buisness analyst,mern stack developer ",
 
     businessProblem:
-      "Users were abandoning the food-ordering process because menus were cluttered, delivery times were unclear, and checkout required too many steps.",
+      "EV drivers face long waits and range anxiety due to limited public infrastructure, while private charging capacity remains inaccessible.",
     solution:
-      "Redesigned the menu UX, added real-time delivery estimates, and implemented a 2-step checkout. Reduced friction and increased completed orders.",
-
-    techStack: ["React", "Tailwind CSS", "JavaScript", "Figma", "HTML5", "CSS"],
-    liveLink: "#",
-    githubLink: "#",
-    uxReport: "/airbnb-ux-report.pdf",
-    color: "bg-blue-50",
+      "Grid-Lock creates a P2P marketplace with dynamic pricing and GPS routing to unlock private chargers and efficiently manage traffic in real-time.",
+    
+    techStack: ["React", "Tailwind CSS", "Node/Express", "MongoDB", "Socket.io"],
+    
+    liveLink: "https://grid-lock-ev-platform.vercel.app/",
+    githubLink: "https://github.com/adjienjeknwc/grid-lock-ev-platform",
+    imageUrl: "/images/gridlock ss.png",
+    color: "bg-purple-50",
   },
 
   {
     id: 2,
     title: "RetailPulse Dashboard",
-    category: "Full Stack Development",
-    tagline:
-      "A real-time analytics dashboard for sales and inventory insights.",
-    description:
-      "Real-time business analytics platform with sales visualization, inventory tracking, and split-cloud architecture (Render + Vercel).",
-
-    techStack: ["MERN Stack", "Tailwind CSS", "Recharts", "MongoDB Atlas"],
+    tagline: "Live Business Intelligence Platform",
+    role: "Full Stack Developer & Business Analyst",
+    businessProblem:
+      "Small retailers struggle with manual inventory tracking and lack real-time visibility into daily revenue trends.",
+    solution:
+      "Built and deployed a fully functional MERN stack dashboard connecting a React frontend to a cloud-based MongoDB backend to visualize sales data instantly.",
+    
+    techStack: ["React.js", "Node.js + Express", "MongoDB Atlas", "Tailwind CSS", "Recharts"],
+    
     liveLink: "https://retail-pulse-eta.vercel.app",
     githubLink: "https://github.com/adjienjeknwc/retail-pulse",
-
-    // Put your screenshot inside /public/assets/
-    image: "/assets/retail-ss.png",
+    imageUrl: "/images/retail ss.png",
+    color: "bg-indigo-50",
   },
 
   {
     id: 3,
-    title: "Cooking Guide app",
-    tagline: "Making cooking simple through guided experiences.",
-    role: "Frontend Developer",
-
+    title: "Foodily-online food delivery app",
+    tagline: "user interface design along with prototype ",
+    role: "UX design",
     businessProblem:
-      "Beginners struggled with long instructions, unclear ingredient grouping, and no guided flow, resulting in confusion and drop-off.",
+      "Users struggle to quickly find preferred meals due to cluttered menus and slow, confusing checkout flows.",
     solution:
-      "Designed step-by-step instructions, ingredient categorization, and built-in timers. Created a clean UI for effortless cooking execution.",
-
-    techStack: ["React", "JavaScript", "CSS Grid"],
-    liveLink: "#",
-    githubLink: "#",
-    uxReport: "/airbnb-ux-report.pdf",
+      "Designed an intuitive, streamlined ordering experience with smart categorization and a faster, clearer checkout flow.",
+    
+    techStack: [ "Figma"],
+    imageUrl: "/images/airbnb-ss.png",
     color: "bg-rose-50",
   },
 ];
