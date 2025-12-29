@@ -49,7 +49,7 @@ const projects = [
     
     liveLink: "https://grid-lock-ev-platform.vercel.app/",
     githubLink: "https://github.com/adjienjeknwc/grid-lock-ev-platform",
-    imageUrl: "/images/gridlock ss.png",
+    imageUrl: "/images/gridlock.png",
     color: "bg-purple-50",
 
 },
@@ -258,19 +258,23 @@ export default function App() {
               {/* Image / Preview Area */}
               <div className={`md:col-span-5 aspect-[4/3] rounded-2xl ${project.color || 'bg-slate-100'} flex items-center justify-center border border-slate-100 shadow-sm overflow-hidden relative`}>
                 
-                {/* ✅ THIS IS THE LOGIC THAT SHOWS THE IMAGE */}
-                {project.imageUrl ? (
-                  <img 
-                    src={project.imageUrl} 
-                    alt={project.title} 
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
-                  />
-                ) : (
-                  <div className="text-center p-6">
-                     <FileBadge size={48} className="mx-auto mb-3 text-slate-300" />
-                     <span className="text-slate-400 font-medium block">Project Preview</span>
-                  </div>
-                )}
+                {/* ✅ UPDATED LOGIC FOR IMAGE PATH RESOLUTION */}
+          {project.imageUrl ? (
+            <img 
+              // This path logic is robust for both local (npm run dev) and Vercel environments
+              // It prepends the correct base path, which often fixes the local 404 image issue.
+              src={`${process.env.PUBLIC_URL || ''}${project.imageUrl}`} 
+              alt={`Screenshot of ${project.title}`} 
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+            />
+          ) : (
+            <div className="text-center p-6">
+               {/* Assuming FileBadge and Lucide icons are imported */}
+               <FileBadge size={48} className="mx-auto mb-3 text-slate-300" /> 
+               <span className="text-slate-400 font-medium block">Project Preview</span>
+            </div>
+          )}
+          
                 
               </div>
 

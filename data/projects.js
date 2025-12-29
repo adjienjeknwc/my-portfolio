@@ -15,7 +15,7 @@ export const projects = [
     
     liveLink: "https://grid-lock-ev-platform.vercel.app/",
     githubLink: "https://github.com/adjienjeknwc/grid-lock-ev-platform",
-    imageUrl: "/images/gridlock ss.png",
+    imageUrl: "/images/gridlock.png",
     color: "bg-purple-50",
   },
 
