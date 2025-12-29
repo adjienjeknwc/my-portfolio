@@ -51,22 +51,22 @@ export default function App() {
             
             {/* IMAGE CONTAINER */}
             <div className={`md:col-span-5 aspect-[4/3] rounded-2xl ${project.color} flex items-center justify-center border border-slate-200 overflow-hidden relative shadow-sm`}>
-              {project.imageUrl ? (
-                <img 
-                  /* .src is required when importing images as modules in Next.js */
-                  src={project.imageUrl.src || project.imageUrl} 
-                  alt={project.title} 
-                  className="w-full h-full object-cover block"
-                  style={{ minHeight: '100%', minWidth: '100%' }}
-                />
-              ) : (
-                <div className="text-center p-6">
-                   <FileBadge size={48} className="mx-auto mb-3 text-slate-300" /> 
-                   <span className="text-slate-400 font-medium block">Project Preview</span>
-                </div>
-              )}
-            </div>
-
+  {project.imageUrl ? (
+    <img 
+      /* .src extracts the actual URL string from the Next.js import object */
+      src={project.imageUrl.src || project.imageUrl} 
+      alt={project.title} 
+      className="w-full h-full object-cover block"
+      /* Forces the image to fill the container so it's not invisible */
+      style={{ minHeight: '100%', minWidth: '100%' }}
+    />
+  ) : (
+    <div className="text-center p-6">
+       <FileBadge size={48} className="mx-auto mb-3 text-slate-300" /> 
+       <span className="text-slate-400 font-medium block">Project Preview</span>
+    </div>
+  )}
+</div>
             {/* TEXT CONTENT */}
             <div className="md:col-span-7 space-y-4">
               <span className="text-blue-600 font-bold text-sm uppercase">{project.role}</span>
