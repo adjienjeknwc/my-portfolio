@@ -187,7 +187,7 @@ export default function Portfolio() {
 
       {/* --- PROJECTS SECTION --- */}
       <section id="work" className="max-w-5xl mx-auto px-6 py-32">
-        <h2 className="text-3xl font-bold mb-16">Selected Case Studies</h2>
+        <h2 className="text-3xl font-bold mb-16">PROJECTS</h2>
         
         <div className="space-y-24">
           {projects.map((project) => (
